@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:weightSum="100">
+    <TextView
+        android:text="Registro"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:layout_weight="20"
+        android:id="@+id/txtRegistro"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="32sp" />
+    <TextView
+        android:text="Cedula"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/txtCedula"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="16sp" />
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputCedula"
+        android:backgroundTint="#ff2c3e50"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Ingrese su Cedula"
+        android:textColorHint="#34495e"
+        android:gravity="center"
+        android:textColor="#34495e" />
+    <TextView
+        android:text="Nombre Completo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/txtNombre"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="16sp" />
+    <EditText
+        android:inputType="textPersonName|textCapWords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputNombre"
+        android:backgroundTint="#ff2c3e50"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Ingrese su Nombre Completo"
+        android:textColorHint="#34495e"
+        android:gravity="center"
+        android:textColor="#34495e" />
+    <TextView
+        android:text="Correo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/txtCorreo"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="16sp" />
+    <EditText
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputCorreo"
+        android:backgroundTint="#ff2c3e50"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Ingrese su Correo Electronico"
+        android:textColorHint="#34495e"
+        android:gravity="center"
+        android:textColor="#34495e" />
+    <TextView
+        android:text="Genero"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/txtGenero"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="16sp" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:backgroundTint="#ff2c3e50"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:layout_weight="5" />
+    <TextView
+        android:text="Clave"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/txtClave"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="16sp" />
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputClave"
+        android:backgroundTint="#ff2c3e50"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Ingrese su Clave"
+        android:textColorHint="#34495e"
+        android:textColor="#34495e"
+        android:gravity="center" />
+    <Button
+        android:backgroundTint="#ffe74c3c"
+        android:text="Registrarme"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:id="@+id/btnRegistrarme"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="24sp" />
+</LinearLayout>

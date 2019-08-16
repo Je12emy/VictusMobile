@@ -1,0 +1,1 @@
+<resources><string name="app_name">Victus</string><string name="planet_prompt">Choose a planet</string><string-array name="planets_array"><item>Masculino</item><item>Femenino</item></string-array></resources>

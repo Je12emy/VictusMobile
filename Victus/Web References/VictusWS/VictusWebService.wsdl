@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="BuscarUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Correo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarUsuarioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarUsuarioTodo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Correo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarUsuarioTodoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarUsuarioTodoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CrearUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cedula" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="apellido1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="apellido2" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="genero" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="contraseña" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CrearUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CrearUsuarioResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarClienteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarUltimoRegistro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarUltimoRegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarUltimoRegistroResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgregarDatosCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Correo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Peso" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Altura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Edad" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IMC" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Agua" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Fecha" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgregarDatosClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AgregarDatosClienteResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarUltimoRegistroHarris">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarUltimoRegistroHarrisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarUltimoRegistroHarrisResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarRegistroHarris">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarRegistroHarrisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarRegistroHarrisResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgregarRegistroHarris">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FactorActividad" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="TMB" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="NivelCalorico" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgregarRegistroHarrisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AgregarRegistroHarrisResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgregarDieta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorreoCliente" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaDieta" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="CodigoHarris" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Objetivo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgregarDietaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AgregarDietaResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerUltimaDieta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorreoCliente" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerUltimaDietaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerUltimaDietaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerDieta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorreoCliente" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaDieta" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerDietaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerDietaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgregarRelacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CodigoDieta" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="CodigoAlimento" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgregarRelacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AgregarRelacionResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerCatalogoAlimentos">
+        <s:complexType />
+      </s:element>
+      <s:element name="ObtenerCatalogoAlimentosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerCatalogoAlimentosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerDietaCompleta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorreoCliente" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CodigoDieta" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerDietaCompletaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerDietaCompletaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgregarMedidas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FechaMedida" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="CorreoCliente" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="BicepIzquierdo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="BicepDerecho" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="Abdomen" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="CuadricepIzquierdo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="CuadricepDerecho" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="PantorrillaIzquierda" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="PantorrillaDerecha" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgregarMedidasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AgregarMedidasResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerUltimaMedida">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorreoCliente" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerUltimaMedidaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerUltimaMedidaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerMedida">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorreoCliente" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaDieta" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerMedidaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerMedidaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerMedicionCompleta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CodigoMedida" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerMedicionCompletaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerMedicionCompletaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="BuscarUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="BuscarUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarUsuarioTodoSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarUsuarioTodo" />
+  </wsdl:message>
+  <wsdl:message name="BuscarUsuarioTodoSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarUsuarioTodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CrearUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:CrearUsuario" />
+  </wsdl:message>
+  <wsdl:message name="CrearUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:CrearUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarCliente" />
+  </wsdl:message>
+  <wsdl:message name="BuscarClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarUltimoRegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarUltimoRegistro" />
+  </wsdl:message>
+  <wsdl:message name="BuscarUltimoRegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarUltimoRegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="AgregarDatosClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:AgregarDatosCliente" />
+  </wsdl:message>
+  <wsdl:message name="AgregarDatosClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:AgregarDatosClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarUltimoRegistroHarrisSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarUltimoRegistroHarris" />
+  </wsdl:message>
+  <wsdl:message name="BuscarUltimoRegistroHarrisSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarUltimoRegistroHarrisResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarRegistroHarrisSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarRegistroHarris" />
+  </wsdl:message>
+  <wsdl:message name="BuscarRegistroHarrisSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarRegistroHarrisResponse" />
+  </wsdl:message>
+  <wsdl:message name="AgregarRegistroHarrisSoapIn">
+    <wsdl:part name="parameters" element="tns:AgregarRegistroHarris" />
+  </wsdl:message>
+  <wsdl:message name="AgregarRegistroHarrisSoapOut">
+    <wsdl:part name="parameters" element="tns:AgregarRegistroHarrisResponse" />
+  </wsdl:message>
+  <wsdl:message name="AgregarDietaSoapIn">
+    <wsdl:part name="parameters" element="tns:AgregarDieta" />
+  </wsdl:message>
+  <wsdl:message name="AgregarDietaSoapOut">
+    <wsdl:part name="parameters" element="tns:AgregarDietaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerUltimaDietaSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerUltimaDieta" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerUltimaDietaSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerUltimaDietaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerDietaSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerDieta" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerDietaSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerDietaResponse" />
+  </wsdl:message>
+  <wsdl:message name="AgregarRelacionSoapIn">
+    <wsdl:part name="parameters" element="tns:AgregarRelacion" />
+  </wsdl:message>
+  <wsdl:message name="AgregarRelacionSoapOut">
+    <wsdl:part name="parameters" element="tns:AgregarRelacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoAlimentosSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerCatalogoAlimentos" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCatalogoAlimentosSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerCatalogoAlimentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerDietaCompletaSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerDietaCompleta" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerDietaCompletaSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerDietaCompletaResponse" />
+  </wsdl:message>
+  <wsdl:message name="AgregarMedidasSoapIn">
+    <wsdl:part name="parameters" element="tns:AgregarMedidas" />
+  </wsdl:message>
+  <wsdl:message name="AgregarMedidasSoapOut">
+    <wsdl:part name="parameters" element="tns:AgregarMedidasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerUltimaMedidaSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerUltimaMedida" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerUltimaMedidaSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerUltimaMedidaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerMedidaSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerMedida" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerMedidaSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerMedidaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerMedicionCompletaSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerMedicionCompleta" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerMedicionCompletaSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerMedicionCompletaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="VictusWebServiceSoap">
+    <wsdl:operation name="BuscarUsuario">
+      <wsdl:input message="tns:BuscarUsuarioSoapIn" />
+      <wsdl:output message="tns:BuscarUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarUsuarioTodo">
+      <wsdl:input message="tns:BuscarUsuarioTodoSoapIn" />
+      <wsdl:output message="tns:BuscarUsuarioTodoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearUsuario">
+      <wsdl:input message="tns:CrearUsuarioSoapIn" />
+      <wsdl:output message="tns:CrearUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarCliente">
+      <wsdl:input message="tns:BuscarClienteSoapIn" />
+      <wsdl:output message="tns:BuscarClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarUltimoRegistro">
+      <wsdl:input message="tns:BuscarUltimoRegistroSoapIn" />
+      <wsdl:output message="tns:BuscarUltimoRegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarDatosCliente">
+      <wsdl:input message="tns:AgregarDatosClienteSoapIn" />
+      <wsdl:output message="tns:AgregarDatosClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarUltimoRegistroHarris">
+      <wsdl:input message="tns:BuscarUltimoRegistroHarrisSoapIn" />
+      <wsdl:output message="tns:BuscarUltimoRegistroHarrisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarRegistroHarris">
+      <wsdl:input message="tns:BuscarRegistroHarrisSoapIn" />
+      <wsdl:output message="tns:BuscarRegistroHarrisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarRegistroHarris">
+      <wsdl:input message="tns:AgregarRegistroHarrisSoapIn" />
+      <wsdl:output message="tns:AgregarRegistroHarrisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarDieta">
+      <wsdl:input message="tns:AgregarDietaSoapIn" />
+      <wsdl:output message="tns:AgregarDietaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUltimaDieta">
+      <wsdl:input message="tns:ObtenerUltimaDietaSoapIn" />
+      <wsdl:output message="tns:ObtenerUltimaDietaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDieta">
+      <wsdl:input message="tns:ObtenerDietaSoapIn" />
+      <wsdl:output message="tns:ObtenerDietaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarRelacion">
+      <wsdl:input message="tns:AgregarRelacionSoapIn" />
+      <wsdl:output message="tns:AgregarRelacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoAlimentos">
+      <wsdl:input message="tns:ObtenerCatalogoAlimentosSoapIn" />
+      <wsdl:output message="tns:ObtenerCatalogoAlimentosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDietaCompleta">
+      <wsdl:input message="tns:ObtenerDietaCompletaSoapIn" />
+      <wsdl:output message="tns:ObtenerDietaCompletaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarMedidas">
+      <wsdl:input message="tns:AgregarMedidasSoapIn" />
+      <wsdl:output message="tns:AgregarMedidasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUltimaMedida">
+      <wsdl:input message="tns:ObtenerUltimaMedidaSoapIn" />
+      <wsdl:output message="tns:ObtenerUltimaMedidaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMedida">
+      <wsdl:input message="tns:ObtenerMedidaSoapIn" />
+      <wsdl:output message="tns:ObtenerMedidaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMedicionCompleta">
+      <wsdl:input message="tns:ObtenerMedicionCompletaSoapIn" />
+      <wsdl:output message="tns:ObtenerMedicionCompletaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VictusWebServiceSoap" type="tns:VictusWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BuscarUsuario">
+      <soap:operation soapAction="http://tempuri.org/BuscarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarUsuarioTodo">
+      <soap:operation soapAction="http://tempuri.org/BuscarUsuarioTodo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearUsuario">
+      <soap:operation soapAction="http://tempuri.org/CrearUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarCliente">
+      <soap:operation soapAction="http://tempuri.org/BuscarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarUltimoRegistro">
+      <soap:operation soapAction="http://tempuri.org/BuscarUltimoRegistro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarDatosCliente">
+      <soap:operation soapAction="http://tempuri.org/AgregarDatosCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarUltimoRegistroHarris">
+      <soap:operation soapAction="http://tempuri.org/BuscarUltimoRegistroHarris" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarRegistroHarris">
+      <soap:operation soapAction="http://tempuri.org/BuscarRegistroHarris" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarRegistroHarris">
+      <soap:operation soapAction="http://tempuri.org/AgregarRegistroHarris" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarDieta">
+      <soap:operation soapAction="http://tempuri.org/AgregarDieta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUltimaDieta">
+      <soap:operation soapAction="http://tempuri.org/ObtenerUltimaDieta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDieta">
+      <soap:operation soapAction="http://tempuri.org/ObtenerDieta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarRelacion">
+      <soap:operation soapAction="http://tempuri.org/AgregarRelacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoAlimentos">
+      <soap:operation soapAction="http://tempuri.org/ObtenerCatalogoAlimentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDietaCompleta">
+      <soap:operation soapAction="http://tempuri.org/ObtenerDietaCompleta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarMedidas">
+      <soap:operation soapAction="http://tempuri.org/AgregarMedidas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUltimaMedida">
+      <soap:operation soapAction="http://tempuri.org/ObtenerUltimaMedida" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMedida">
+      <soap:operation soapAction="http://tempuri.org/ObtenerMedida" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMedicionCompleta">
+      <soap:operation soapAction="http://tempuri.org/ObtenerMedicionCompleta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VictusWebServiceSoap12" type="tns:VictusWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BuscarUsuario">
+      <soap12:operation soapAction="http://tempuri.org/BuscarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarUsuarioTodo">
+      <soap12:operation soapAction="http://tempuri.org/BuscarUsuarioTodo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearUsuario">
+      <soap12:operation soapAction="http://tempuri.org/CrearUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarCliente">
+      <soap12:operation soapAction="http://tempuri.org/BuscarCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarUltimoRegistro">
+      <soap12:operation soapAction="http://tempuri.org/BuscarUltimoRegistro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarDatosCliente">
+      <soap12:operation soapAction="http://tempuri.org/AgregarDatosCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarUltimoRegistroHarris">
+      <soap12:operation soapAction="http://tempuri.org/BuscarUltimoRegistroHarris" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarRegistroHarris">
+      <soap12:operation soapAction="http://tempuri.org/BuscarRegistroHarris" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarRegistroHarris">
+      <soap12:operation soapAction="http://tempuri.org/AgregarRegistroHarris" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarDieta">
+      <soap12:operation soapAction="http://tempuri.org/AgregarDieta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUltimaDieta">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerUltimaDieta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDieta">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerDieta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarRelacion">
+      <soap12:operation soapAction="http://tempuri.org/AgregarRelacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCatalogoAlimentos">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerCatalogoAlimentos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDietaCompleta">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerDietaCompleta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarMedidas">
+      <soap12:operation soapAction="http://tempuri.org/AgregarMedidas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUltimaMedida">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerUltimaMedida" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMedida">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerMedida" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMedicionCompleta">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerMedicionCompleta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VictusWebService">
+    <wsdl:port name="VictusWebServiceSoap" binding="tns:VictusWebServiceSoap">
+      <soap:address location="http://www.victusws.somee.com/VictusWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VictusWebServiceSoap12" binding="tns:VictusWebServiceSoap12">
+      <soap12:address location="http://www.victusws.somee.com/VictusWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
