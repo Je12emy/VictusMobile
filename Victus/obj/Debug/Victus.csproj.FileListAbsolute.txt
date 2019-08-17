@@ -45,7 +45,6 @@ C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\android\assets\Sy
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\android\assets\System.Runtime.Serialization.pdb
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\android\assets\System.ServiceModel.Internals.pdb
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\android\assets\System.Xml.pdb
-C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\bin\Debug\Victus.dll
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\bin\Debug\System.Data.pdb
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\bin\Debug\System.EnterpriseServices.pdb
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\bin\Debug\System.Web.Services.pdb
@@ -58,4 +57,15 @@ C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\linksrc\System.We
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\linksrc\System.Numerics.pdb
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\linksrc\System.Transactions.pdb
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\linksrc\Mono.Data.Tds.pdb
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\res\layout\login.xml
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\res\layout\dashboard.xml
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\res\drawable\datos.jpg
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\res\values\colors.xml
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\android\assets\Mono.Data.Tds.pdb
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\android\assets\System.Data.pdb
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\android\assets\System.EnterpriseServices.pdb
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\android\assets\System.Numerics.pdb
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\android\assets\System.Transactions.pdb
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\android\assets\System.Web.Services.pdb
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\bin\Debug\Victus.dll
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\linksrc\Victus.dll.mdb

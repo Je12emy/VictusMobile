@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@android:color/background_light">
+    <Button
+        android:backgroundTint="#ffe74c3c"
+        android:text="Mis Datos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:id="@+id/btnIngresar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="24sp" />
+    <Button
+        android:backgroundTint="#ffe74c3c"
+        android:text="Mi Nivel Calorico"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:id="@+id/btnIngresar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="24sp" />
+    <Button
+        android:backgroundTint="#ffe74c3c"
+        android:text="Mi Dieta"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:id="@+id/btnIngresar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="24sp" />
+    <Button
+        android:backgroundTint="#ffe74c3c"
+        android:text="Mis Medidas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:id="@+id/btnIngresar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="24sp" />
+</LinearLayout>

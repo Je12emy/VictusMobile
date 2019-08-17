@@ -58,5 +58,6 @@ C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Release\android\assets\
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Release\android\assets\System.Xml.pdb
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Release\Victus.csprojResolveAssemblyReference.cache
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Release\res\layout\login.xml
-C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\bin\Release\Victus.dll
-C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Release\linksrc\Victus.dll.mdb
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Release\res\layout\dashboard.xml
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Release\res\drawable\datos.jpg
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Release\res\values\colors.xml

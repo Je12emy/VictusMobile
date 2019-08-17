@@ -24,30 +24,51 @@ namespace Victus
 
             // Create your application here
             SetContentView(Resource.Layout.Login);
+            // Declarar Variables
             Button btnIngresar = FindViewById<Button>(Resource.Id.btnIngresarLogin);
             EditText correo = FindViewById<EditText>(Resource.Id.inputCorreoLogin);
             EditText clave = FindViewById<EditText>(Resource.Id.inputClaveLogin);
 
             btnIngresar.Click += delegate{
+                // Mensaje de feedback para el usuario
                 Toast.MakeText(this, "Verificando", ToastLength.Long).Show();
-                Intent dashboard;
-                DataTable tabla;
-                VictusWebService cliente = new VictusWebService();
-
-                tabla = cliente.BuscarUsuario(correo.Text);
-                if (tabla.Rows.Count>0)
+                if (!string.IsNullOrEmpty(correo.Text) && !string.IsNullOrEmpty(clave.Text))
                 {
-                    if (clave.Text == tabla.Rows[0][1].ToString())
-                    {
-                        Toast.MakeText(this, "Iniciando Sesion!", ToastLength.Long).Show();
-                        dashboard = new Intent(this,typeof(MainActivity));
-                        StartActivity(dashboard);
-                    }else
-                        Toast.MakeText(this, "Error, credenciales erroneas", ToastLength.Long).Show();
+                    // Declarar variables
+                    Intent dashboard;
+                    DataTable tabla;
+                    VictusWebService cliente = new VictusWebService();
 
-                }
-                else
-                    Toast.MakeText(this, "Error, puede que ese correo no este registrado", ToastLength.Long).Show();
+                    // Buscar las credenciales
+                    tabla = cliente.BuscarUsuario(correo.Text);
+                    // Verificacion del DataTable
+                    if (tabla.Rows.Count > 0)
+                    {
+                        // Verificacion de la clave
+                        if (clave.Text == tabla.Rows[0][1].ToString())
+                        {
+                            // Se avisa que se esta en proceso de iniciar sesion
+                            Toast.MakeText(this, "Iniciando Sesion!", ToastLength.Long).Show();
+
+                            // Se buscan todos los datos de Usuario
+                            tabla = cliente.BuscarUsuarioTodo(correo.Text);
+
+                            dashboard = new Intent(this, typeof(MainActivity));
+                            // Insertar un string para pasarlo atravez del modelo.
+                            dashboard.Extras.PutString("correoUsuaio", tabla.Rows[0][0].ToString());
+                            // Iniciar Actividad
+                            StartActivity(dashboard);
+                        }
+                        else
+                            Toast.MakeText(this, "Error, credenciales erroneas", ToastLength.Long).Show();
+                        // Retorna un error, pues la contraseña es incorrecta
+                    }
+                    else
+                        Toast.MakeText(this, "Error, puede que ese correo no este registrado", ToastLength.Long).Show();
+                    // Retorna un error, pues no se encontro ese correo en la BD
+                }else
+                    Toast.MakeText(this, "Por favor ingrese su correo y contraseña", ToastLength.Long).Show();
+                    // Mostrar error
             };
         }
     }

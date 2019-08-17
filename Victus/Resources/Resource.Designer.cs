@@ -31,8 +31,8 @@ namespace Victus
 		public partial class Array
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int planets_array = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int planets_array = 2131099648;
 			
 			static Array()
 			{
@@ -57,11 +57,63 @@ namespace Victus
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f040002
+			public const int backgroundcolor = 2130968578;
+			
+			// aapt resource value: 0x7f04000b
+			public const int black_overlay = 2130968587;
+			
+			// aapt resource value: 0x7f040007
+			public const int colorAccent = 2130968583;
+			
+			// aapt resource value: 0x7f040000
+			public const int colorPrimary = 2130968576;
+			
+			// aapt resource value: 0x7f040001
+			public const int colorPrimaryDark = 2130968577;
+			
+			// aapt resource value: 0x7f040008
+			public const int darkblue = 2130968584;
+			
+			// aapt resource value: 0x7f040004
+			public const int deeppurple = 2130968580;
+			
+			// aapt resource value: 0x7f040006
+			public const int green = 2130968582;
+			
+			// aapt resource value: 0x7f040003
+			public const int lightgray = 2130968579;
+			
+			// aapt resource value: 0x7f04000a
+			public const int pink = 2130968586;
+			
+			// aapt resource value: 0x7f040009
+			public const int testcolorblue = 2130968585;
+			
+			// aapt resource value: 0x7f040005
+			public const int yello = 2130968581;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int generoArray = 2130837504;
+			public const int datos = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int generoArray = 2130837505;
 			
 			static Drawable()
 			{
@@ -76,59 +128,59 @@ namespace Victus
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060006
-			public const int Registrarme = 2131099654;
+			// aapt resource value: 0x7f070007
+			public const int Registrarme = 2131165191;
 			
-			// aapt resource value: 0x7f060007
-			public const int btnIngresar = 2131099655;
+			// aapt resource value: 0x7f070000
+			public const int btnIngresar = 2131165184;
 			
-			// aapt resource value: 0x7f060005
-			public const int btnIngresarLogin = 2131099653;
+			// aapt resource value: 0x7f070006
+			public const int btnIngresarLogin = 2131165190;
 			
-			// aapt resource value: 0x7f060008
-			public const int btnRegistrarme = 2131099656;
+			// aapt resource value: 0x7f070008
+			public const int btnRegistrarme = 2131165192;
 			
-			// aapt resource value: 0x7f06000b
-			public const int inputCedula = 2131099659;
+			// aapt resource value: 0x7f07000b
+			public const int inputCedula = 2131165195;
 			
-			// aapt resource value: 0x7f060011
-			public const int inputClave = 2131099665;
+			// aapt resource value: 0x7f070011
+			public const int inputClave = 2131165201;
 			
-			// aapt resource value: 0x7f060004
-			public const int inputClaveLogin = 2131099652;
+			// aapt resource value: 0x7f070005
+			public const int inputClaveLogin = 2131165189;
 			
-			// aapt resource value: 0x7f06000e
-			public const int inputCorreo = 2131099662;
+			// aapt resource value: 0x7f07000e
+			public const int inputCorreo = 2131165198;
 			
-			// aapt resource value: 0x7f060002
-			public const int inputCorreoLogin = 2131099650;
+			// aapt resource value: 0x7f070003
+			public const int inputCorreoLogin = 2131165187;
 			
-			// aapt resource value: 0x7f06000d
-			public const int inputNombre = 2131099661;
+			// aapt resource value: 0x7f07000d
+			public const int inputNombre = 2131165197;
 			
-			// aapt resource value: 0x7f060010
-			public const int spinner = 2131099664;
+			// aapt resource value: 0x7f070010
+			public const int spinner = 2131165200;
 			
-			// aapt resource value: 0x7f06000a
-			public const int txtCedula = 2131099658;
+			// aapt resource value: 0x7f07000a
+			public const int txtCedula = 2131165194;
 			
-			// aapt resource value: 0x7f060003
-			public const int txtClave = 2131099651;
+			// aapt resource value: 0x7f070004
+			public const int txtClave = 2131165188;
 			
-			// aapt resource value: 0x7f060001
-			public const int txtCorreo = 2131099649;
+			// aapt resource value: 0x7f070002
+			public const int txtCorreo = 2131165186;
 			
-			// aapt resource value: 0x7f06000f
-			public const int txtGenero = 2131099663;
+			// aapt resource value: 0x7f07000f
+			public const int txtGenero = 2131165199;
 			
-			// aapt resource value: 0x7f060000
-			public const int txtLogin = 2131099648;
+			// aapt resource value: 0x7f070001
+			public const int txtLogin = 2131165185;
 			
-			// aapt resource value: 0x7f06000c
-			public const int txtNombre = 2131099660;
+			// aapt resource value: 0x7f07000c
+			public const int txtNombre = 2131165196;
 			
-			// aapt resource value: 0x7f060009
-			public const int txtRegistro = 2131099657;
+			// aapt resource value: 0x7f070009
+			public const int txtRegistro = 2131165193;
 			
 			static Id()
 			{
@@ -144,13 +196,16 @@ namespace Victus
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Login = 2130903040;
+			public const int Dashboard = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public const int Login = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Registro = 2130903042;
+			public const int Main = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int Registro = 2130903043;
 			
 			static Layout()
 			{
@@ -165,11 +220,11 @@ namespace Victus
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int app_name = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int app_name = 2131034112;
 			
-			// aapt resource value: 0x7f040001
-			public const int planet_prompt = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int planet_prompt = 2131034113;
 			
 			static String()
 			{

@@ -9,35 +9,56 @@ package victus.victus;
 
 public final class R {
     public static final class array {
-        public static final int planets_array=0x7f050000;
+        public static final int planets_array=0x7f060000;
     }
     public static final class attr {
     }
+    public static final class color {
+        public static final int backgroundcolor=0x7f040002;
+        public static final int black_overlay=0x7f04000b;
+        public static final int colorAccent=0x7f040007;
+        public static final int colorPrimary=0x7f040000;
+        public static final int colorPrimaryDark=0x7f040001;
+        public static final int darkblue=0x7f040008;
+        public static final int deeppurple=0x7f040004;
+        public static final int green=0x7f040006;
+        public static final int lightgray=0x7f040003;
+        public static final int pink=0x7f04000a;
+        public static final int testcolorblue=0x7f040009;
+        public static final int yello=0x7f040005;
+    }
     public static final class drawable {
-        public static final int generoarray=0x7f020000;
+        public static final int datos=0x7f020000;
+        public static final int generoarray=0x7f020001;
     }
     public static final class id {
-        public static final int Registrarme=0x7f060000;
-        public static final int btnIngresar=0x7f060001;
-        public static final int btnRegistrarme=0x7f060002;
-        public static final int inputCedula=0x7f060005;
-        public static final int inputClave=0x7f06000d;
-        public static final int inputCorreo=0x7f060009;
-        public static final int inputNombre=0x7f060007;
-        public static final int spinner=0x7f06000b;
-        public static final int txtCedula=0x7f060004;
-        public static final int txtClave=0x7f06000c;
-        public static final int txtCorreo=0x7f060008;
-        public static final int txtGenero=0x7f06000a;
-        public static final int txtNombre=0x7f060006;
-        public static final int txtRegistro=0x7f060003;
+        public static final int Registrarme=0x7f070007;
+        public static final int btnIngresar=0x7f070000;
+        public static final int btnIngresarLogin=0x7f070006;
+        public static final int btnRegistrarme=0x7f070008;
+        public static final int inputCedula=0x7f07000b;
+        public static final int inputClave=0x7f070011;
+        public static final int inputClaveLogin=0x7f070005;
+        public static final int inputCorreo=0x7f07000e;
+        public static final int inputCorreoLogin=0x7f070003;
+        public static final int inputNombre=0x7f07000d;
+        public static final int spinner=0x7f070010;
+        public static final int txtCedula=0x7f07000a;
+        public static final int txtClave=0x7f070004;
+        public static final int txtCorreo=0x7f070002;
+        public static final int txtGenero=0x7f07000f;
+        public static final int txtLogin=0x7f070001;
+        public static final int txtNombre=0x7f07000c;
+        public static final int txtRegistro=0x7f070009;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
-        public static final int registro=0x7f030001;
+        public static final int dashboard=0x7f030000;
+        public static final int login=0x7f030001;
+        public static final int main=0x7f030002;
+        public static final int registro=0x7f030003;
     }
     public static final class string {
-        public static final int app_name=0x7f040000;
-        public static final int planet_prompt=0x7f040001;
+        public static final int app_name=0x7f050000;
+        public static final int planet_prompt=0x7f050001;
     }
 }

@@ -41,34 +41,50 @@ namespace Victus
             Button btnRegistrarme = FindViewById<Button>(Resource.Id.btnRegistrarme);
             btnRegistrarme.Click += delegate
             {
+                
                 Toast.MakeText(this, "Registrando", ToastLength.Long).Show();
                 EditText correo = FindViewById<EditText>(Resource.Id.inputCorreo);
                 EditText cedula = FindViewById<EditText>(Resource.Id.inputCedula);
                 EditText clave = FindViewById<EditText>(Resource.Id.inputClave);
                 // Separar el nombre completo
                 EditText nombre = FindViewById<EditText>(Resource.Id.inputNombre);
-                
 
-                // Hacer split en los espacios
-                var nombreCompleto = nombre.Text.Split(' ');
-                // Capturarlo en una variable
-                string _nombre = nombreCompleto[0];
-                string primerApellido = nombreCompleto[1];
-                string segundoApellido = nombreCompleto[2];
-
-                // Registrar usuario en el sistema
-                VictusWebService cliente = new VictusWebService();
-                int i;
-                i = cliente.CrearUsuario(correo.Text, Convert.ToInt32(cedula.Text), _nombre, primerApellido, segundoApellido, genero, clave.Text);
-                if (i > 0)
+                // Si todos los campos estan llenos
+                if (!string.IsNullOrEmpty(correo.Text) && !string.IsNullOrEmpty(cedula.Text) && !string.IsNullOrEmpty(clave.Text) && !string.IsNullOrEmpty(nombre.Text))
                 {
-                    Toast.MakeText(this,"Ha sido registrado!", ToastLength.Long).Show();
-                }else
-                    Toast.MakeText(this, "Se produjo un error al registrarlo!", ToastLength.Long).Show();
+                    // Hacer split en los espacios
+                    var nombreCompleto = nombre.Text.Split(' ');
+                    if (nombreCompleto.Length < 2)
+                    {
+                        Toast.MakeText(this, "Por favor ingrese su Nombres y Apellidos!", ToastLength.Long).Show();
+                        // Mostrar error          
+                    }
+                    else {
+                        // Capturarlo en una variable
+                        string _nombre = nombreCompleto[0];
+                        string primerApellido = nombreCompleto[1];
+                        string segundoApellido = nombreCompleto[2];
 
-                // Volver al inicio de la aplicacion.
-                Intent inicio = new Intent(this,typeof(MainActivity));
-                StartActivity(inicio);
+                        // Registrar usuario en el sistema
+                        VictusWebService cliente = new VictusWebService();
+                        int i;
+                        i = cliente.CrearUsuario(correo.Text, Convert.ToInt32(cedula.Text), _nombre, primerApellido, segundoApellido, genero, clave.Text);
+                        if (i > 0)
+                        {
+                            Toast.MakeText(this, "Ha sido registrado!", ToastLength.Long).Show();
+                        }
+                        else
+                            Toast.MakeText(this, "Se produjo un error al registrarlo!", ToastLength.Long).Show();
+
+                        // Volver al inicio de la aplicacion.
+                        Intent inicio = new Intent(this, typeof(MainActivity));
+                        StartActivity(inicio);
+                    }
+                        
+                    
+                }else
+                    Toast.MakeText(this, "Faltan datos de seleccionar!", ToastLength.Long).Show();
+                    // Mostrar error
             };
 
         }
