@@ -50,12 +50,9 @@ namespace Victus
                             // Se avisa que se esta en proceso de iniciar sesion
                             Toast.MakeText(this, "Iniciando Sesion!", ToastLength.Long).Show();
 
-                            // Se buscan todos los datos de Usuario
-                            tabla = cliente.BuscarUsuarioTodo(correo.Text);
-
-                            dashboard = new Intent(this, typeof(MainActivity));
+                            dashboard = new Intent(this, typeof(Dashboard));                         
                             // Insertar un string para pasarlo atravez del modelo.
-                            dashboard.Extras.PutString("correoUsuaio", tabla.Rows[0][0].ToString());
+                            dashboard.PutExtra("correoUsuaio", correo.Text);
                             // Iniciar Actividad
                             StartActivity(dashboard);
                         }

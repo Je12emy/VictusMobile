@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="25"
-        android:id="@+id/btnIngresar"
+        android:id="@+id/btnDatos"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textSize="24sp" />
@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="25"
-        android:id="@+id/btnIngresar"
+        android:id="@+id/btnCalorias"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textSize="24sp" />
@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="25"
-        android:id="@+id/btnIngresar"
+        android:id="@+id/btnDietar"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textSize="24sp" />
@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="25"
-        android:id="@+id/btnIngresar"
+        android:id="@+id/btnMedidas"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textSize="24sp" />

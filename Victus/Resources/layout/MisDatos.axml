@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:weightSum="100">
+    <TextView
+        android:text="Mis Datos"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:layout_weight="20"
+        android:id="@+id/txtMisDatos"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="32sp" />
+    <TextView
+        android:text="IMC"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:layout_weight="10"
+        android:id="@+id/txtIMC"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="28sp" />
+    <TextView
+        android:text="Sin Registrar"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:layout_weight="10"
+        android:id="@+id/userIMC"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="28sp" />
+    <TextView
+        android:text="Vasos de Agua Recomendados"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:layout_weight="15"
+        android:id="@+id/txtAgua"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:text="Sin Registrar"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:layout_weight="10"
+        android:id="@+id/userAgua"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="28sp" />
+    <Button
+        android:backgroundTint="#ffe74c3c"
+        android:text="Modificar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:id="@+id/btnModificarDatos"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp" />
+</LinearLayout>

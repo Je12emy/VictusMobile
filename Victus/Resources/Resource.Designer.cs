@@ -128,59 +128,89 @@ namespace Victus
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070007
-			public const int Registrarme = 2131165191;
-			
-			// aapt resource value: 0x7f070000
-			public const int btnIngresar = 2131165184;
-			
-			// aapt resource value: 0x7f070006
-			public const int btnIngresarLogin = 2131165190;
-			
-			// aapt resource value: 0x7f070008
-			public const int btnRegistrarme = 2131165192;
-			
-			// aapt resource value: 0x7f07000b
-			public const int inputCedula = 2131165195;
-			
-			// aapt resource value: 0x7f070011
-			public const int inputClave = 2131165201;
-			
-			// aapt resource value: 0x7f070005
-			public const int inputClaveLogin = 2131165189;
-			
-			// aapt resource value: 0x7f07000e
-			public const int inputCorreo = 2131165198;
-			
-			// aapt resource value: 0x7f070003
-			public const int inputCorreoLogin = 2131165187;
-			
-			// aapt resource value: 0x7f07000d
-			public const int inputNombre = 2131165197;
-			
-			// aapt resource value: 0x7f070010
-			public const int spinner = 2131165200;
-			
 			// aapt resource value: 0x7f07000a
-			public const int txtCedula = 2131165194;
-			
-			// aapt resource value: 0x7f070004
-			public const int txtClave = 2131165188;
-			
-			// aapt resource value: 0x7f070002
-			public const int txtCorreo = 2131165186;
-			
-			// aapt resource value: 0x7f07000f
-			public const int txtGenero = 2131165199;
+			public const int Registrarme = 2131165194;
 			
 			// aapt resource value: 0x7f070001
-			public const int txtLogin = 2131165185;
+			public const int btnCalorias = 2131165185;
 			
-			// aapt resource value: 0x7f07000c
-			public const int txtNombre = 2131165196;
+			// aapt resource value: 0x7f070000
+			public const int btnDatos = 2131165184;
+			
+			// aapt resource value: 0x7f070002
+			public const int btnDietar = 2131165186;
+			
+			// aapt resource value: 0x7f07000b
+			public const int btnIngresar = 2131165195;
 			
 			// aapt resource value: 0x7f070009
-			public const int txtRegistro = 2131165193;
+			public const int btnIngresarLogin = 2131165193;
+			
+			// aapt resource value: 0x7f070003
+			public const int btnMedidas = 2131165187;
+			
+			// aapt resource value: 0x7f070012
+			public const int btnModificarDatos = 2131165202;
+			
+			// aapt resource value: 0x7f07000c
+			public const int btnRegistrarme = 2131165196;
+			
+			// aapt resource value: 0x7f070015
+			public const int inputCedula = 2131165205;
+			
+			// aapt resource value: 0x7f07001b
+			public const int inputClave = 2131165211;
+			
+			// aapt resource value: 0x7f070008
+			public const int inputClaveLogin = 2131165192;
+			
+			// aapt resource value: 0x7f070018
+			public const int inputCorreo = 2131165208;
+			
+			// aapt resource value: 0x7f070006
+			public const int inputCorreoLogin = 2131165190;
+			
+			// aapt resource value: 0x7f070017
+			public const int inputNombre = 2131165207;
+			
+			// aapt resource value: 0x7f07001a
+			public const int spinner = 2131165210;
+			
+			// aapt resource value: 0x7f070010
+			public const int txtAgua = 2131165200;
+			
+			// aapt resource value: 0x7f070014
+			public const int txtCedula = 2131165204;
+			
+			// aapt resource value: 0x7f070007
+			public const int txtClave = 2131165191;
+			
+			// aapt resource value: 0x7f070005
+			public const int txtCorreo = 2131165189;
+			
+			// aapt resource value: 0x7f070019
+			public const int txtGenero = 2131165209;
+			
+			// aapt resource value: 0x7f07000e
+			public const int txtIMC = 2131165198;
+			
+			// aapt resource value: 0x7f070004
+			public const int txtLogin = 2131165188;
+			
+			// aapt resource value: 0x7f07000d
+			public const int txtMisDatos = 2131165197;
+			
+			// aapt resource value: 0x7f070016
+			public const int txtNombre = 2131165206;
+			
+			// aapt resource value: 0x7f070013
+			public const int txtRegistro = 2131165203;
+			
+			// aapt resource value: 0x7f070011
+			public const int userAgua = 2131165201;
+			
+			// aapt resource value: 0x7f07000f
+			public const int userIMC = 2131165199;
 			
 			static Id()
 			{
@@ -205,7 +235,10 @@ namespace Victus
 			public const int Main = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Registro = 2130903043;
+			public const int MisDatos = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int Registro = 2130903044;
 			
 			static Layout()
 			{
