@@ -14,6 +14,10 @@ Victus.MisDatos, Victus;md51f177e058595248899511fce92992672.MisDatos
 Victus.MisDatos, Victus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md51f177e058595248899511fce92992672.MisDatos
 Victus.MisDatos;md51f177e058595248899511fce92992672.MisDatos
 victus.MisDatos;md51f177e058595248899511fce92992672.MisDatos
+Victus.MisDatosForm, Victus;md51f177e058595248899511fce92992672.MisDatosForm
+Victus.MisDatosForm, Victus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md51f177e058595248899511fce92992672.MisDatosForm
+Victus.MisDatosForm;md51f177e058595248899511fce92992672.MisDatosForm
+victus.MisDatosForm;md51f177e058595248899511fce92992672.MisDatosForm
 Victus.Registro, Victus;md51f177e058595248899511fce92992672.Registro
 Victus.Registro, Victus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md51f177e058595248899511fce92992672.Registro
 Victus.Registro;md51f177e058595248899511fce92992672.Registro

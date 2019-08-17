@@ -155,32 +155,44 @@ namespace Victus
 			// aapt resource value: 0x7f07000c
 			public const int btnRegistrarme = 2131165196;
 			
-			// aapt resource value: 0x7f070015
-			public const int inputCedula = 2131165205;
+			// aapt resource value: 0x7f070017
+			public const int inputAltura = 2131165207;
 			
-			// aapt resource value: 0x7f07001b
-			public const int inputClave = 2131165211;
+			// aapt resource value: 0x7f07001c
+			public const int inputCedula = 2131165212;
+			
+			// aapt resource value: 0x7f070022
+			public const int inputClave = 2131165218;
 			
 			// aapt resource value: 0x7f070008
 			public const int inputClaveLogin = 2131165192;
 			
-			// aapt resource value: 0x7f070018
-			public const int inputCorreo = 2131165208;
+			// aapt resource value: 0x7f07001f
+			public const int inputCorreo = 2131165215;
 			
 			// aapt resource value: 0x7f070006
 			public const int inputCorreoLogin = 2131165190;
 			
-			// aapt resource value: 0x7f070017
-			public const int inputNombre = 2131165207;
+			// aapt resource value: 0x7f070019
+			public const int inputEdad = 2131165209;
 			
-			// aapt resource value: 0x7f07001a
-			public const int spinner = 2131165210;
+			// aapt resource value: 0x7f07001e
+			public const int inputNombre = 2131165214;
+			
+			// aapt resource value: 0x7f070015
+			public const int inputPeso = 2131165205;
+			
+			// aapt resource value: 0x7f070021
+			public const int spinner = 2131165217;
 			
 			// aapt resource value: 0x7f070010
 			public const int txtAgua = 2131165200;
 			
-			// aapt resource value: 0x7f070014
-			public const int txtCedula = 2131165204;
+			// aapt resource value: 0x7f070016
+			public const int txtAltura = 2131165206;
+			
+			// aapt resource value: 0x7f07001b
+			public const int txtCedula = 2131165211;
 			
 			// aapt resource value: 0x7f070007
 			public const int txtClave = 2131165191;
@@ -188,8 +200,14 @@ namespace Victus
 			// aapt resource value: 0x7f070005
 			public const int txtCorreo = 2131165189;
 			
-			// aapt resource value: 0x7f070019
-			public const int txtGenero = 2131165209;
+			// aapt resource value: 0x7f070013
+			public const int txtDatosForm = 2131165203;
+			
+			// aapt resource value: 0x7f070018
+			public const int txtEdad = 2131165208;
+			
+			// aapt resource value: 0x7f070020
+			public const int txtGenero = 2131165216;
 			
 			// aapt resource value: 0x7f07000e
 			public const int txtIMC = 2131165198;
@@ -200,11 +218,14 @@ namespace Victus
 			// aapt resource value: 0x7f07000d
 			public const int txtMisDatos = 2131165197;
 			
-			// aapt resource value: 0x7f070016
-			public const int txtNombre = 2131165206;
+			// aapt resource value: 0x7f07001d
+			public const int txtNombre = 2131165213;
 			
-			// aapt resource value: 0x7f070013
-			public const int txtRegistro = 2131165203;
+			// aapt resource value: 0x7f070014
+			public const int txtPeso = 2131165204;
+			
+			// aapt resource value: 0x7f07001a
+			public const int txtRegistro = 2131165210;
 			
 			// aapt resource value: 0x7f070011
 			public const int userAgua = 2131165201;
@@ -238,7 +259,10 @@ namespace Victus
 			public const int MisDatos = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int Registro = 2130903044;
+			public const int MisDatosForm = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int Registro = 2130903045;
 			
 			static Layout()
 			{

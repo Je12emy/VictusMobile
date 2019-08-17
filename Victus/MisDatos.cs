@@ -41,7 +41,13 @@ namespace Victus
                 }
             }
             else
-                Toast.MakeText(this, "Parece que no tienes datos registrados" + Intent.GetStringExtra("correoUsuario"), ToastLength.Long).Show();
+                Toast.MakeText(this, "Parece que no tienes datos registrados", ToastLength.Long).Show();
+            Button btnDatosForm = FindViewById<Button>(Resource.Id.btnModificarDatos);
+            btnDatosForm.Click += delegate {
+                Intent misDatosForm = new Intent(this,typeof(MisDatosForm));
+                misDatosForm.PutExtra("correoUsuario", Intent.GetStringExtra("correoUsuaio"));
+                StartActivity(misDatosForm);
+            };
         }
     }
 }

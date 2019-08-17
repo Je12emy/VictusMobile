@@ -16,6 +16,7 @@
       </intent-filter>
     </activity>
     <activity android:label="MisDatos" android:name="md51f177e058595248899511fce92992672.MisDatos" />
+    <activity android:label="MisDatosForm" android:name="md51f177e058595248899511fce92992672.MisDatosForm" />
     <activity android:label="Registro" android:name="md51f177e058595248899511fce92992672.Registro" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Victus.Victus.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->

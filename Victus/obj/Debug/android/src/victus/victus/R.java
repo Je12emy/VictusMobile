@@ -41,23 +41,30 @@ public final class R {
         public static final int btnMedidas=0x7f070003;
         public static final int btnModificarDatos=0x7f070012;
         public static final int btnRegistrarme=0x7f07000c;
-        public static final int inputCedula=0x7f070015;
-        public static final int inputClave=0x7f07001b;
+        public static final int inputAltura=0x7f070017;
+        public static final int inputCedula=0x7f07001c;
+        public static final int inputClave=0x7f070022;
         public static final int inputClaveLogin=0x7f070008;
-        public static final int inputCorreo=0x7f070018;
+        public static final int inputCorreo=0x7f07001f;
         public static final int inputCorreoLogin=0x7f070006;
-        public static final int inputNombre=0x7f070017;
-        public static final int spinner=0x7f07001a;
+        public static final int inputEdad=0x7f070019;
+        public static final int inputNombre=0x7f07001e;
+        public static final int inputPeso=0x7f070015;
+        public static final int spinner=0x7f070021;
         public static final int txtAgua=0x7f070010;
-        public static final int txtCedula=0x7f070014;
+        public static final int txtAltura=0x7f070016;
+        public static final int txtCedula=0x7f07001b;
         public static final int txtClave=0x7f070007;
         public static final int txtCorreo=0x7f070005;
-        public static final int txtGenero=0x7f070019;
+        public static final int txtDatosForm=0x7f070013;
+        public static final int txtEdad=0x7f070018;
+        public static final int txtGenero=0x7f070020;
         public static final int txtIMC=0x7f07000e;
         public static final int txtLogin=0x7f070004;
         public static final int txtMisDatos=0x7f07000d;
-        public static final int txtNombre=0x7f070016;
-        public static final int txtRegistro=0x7f070013;
+        public static final int txtNombre=0x7f07001d;
+        public static final int txtPeso=0x7f070014;
+        public static final int txtRegistro=0x7f07001a;
         public static final int userAgua=0x7f070011;
         public static final int userIMC=0x7f07000f;
     }
@@ -66,7 +73,8 @@ public final class R {
         public static final int login=0x7f030001;
         public static final int main=0x7f030002;
         public static final int misdatos=0x7f030003;
-        public static final int registro=0x7f030004;
+        public static final int misdatosform=0x7f030004;
+        public static final int registro=0x7f030005;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
