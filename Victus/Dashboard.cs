@@ -22,13 +22,14 @@ namespace Victus
             base.OnCreate(savedInstanceState);
 
             // Create your application here
-           
-            Toast.MakeText(this, "Correo: "+ Intent.GetStringExtra("correoUsuaio"), ToastLength.Long).Show();
+
+            string _correo = Intent.GetStringExtra("correoUsuario");
+            Toast.MakeText(this, "Correo: " + _correo, ToastLength.Long).Show();
             SetContentView(Resource.Layout.Dashboard);
             Button btnDatos = FindViewById<Button>(Resource.Id.btnDatos);
             btnDatos.Click += delegate {
                 Intent misDatos = new Intent(this, typeof(MisDatos));
-                misDatos.PutExtra("correoUsuario", Intent.GetStringExtra("correoUsuaio"));
+                misDatos.PutExtra("correoUsuario", _correo);
                 StartActivity(misDatos);
             };
         }

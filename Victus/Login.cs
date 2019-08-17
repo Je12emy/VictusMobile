@@ -52,7 +52,7 @@ namespace Victus
 
                             dashboard = new Intent(this, typeof(Dashboard));                         
                             // Insertar un string para pasarlo atravez del modelo.
-                            dashboard.PutExtra("correoUsuaio", correo.Text);
+                            dashboard.PutExtra("correoUsuario", correo.Text);
                             // Iniciar Actividad
                             StartActivity(dashboard);
                         }

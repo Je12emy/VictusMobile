@@ -149,10 +149,10 @@ namespace VictusWS
             SqlCommand comando = new SqlCommand();
             DataTable tabla = new DataTable();
 
-            comando.CommandText = "SELECT * FROM Cliente where Correo = @Correo and FechaDatos = @Fecha";
+            sqlQuery.Append("SELECT * FROM Cliente where Correo = @Correo and FechaDatos = @Fecha");
 
             comando.Parameters.Add("@Correo", SqlDbType.NVarChar).Value = correo;
-            comando.Parameters.Add("@Fecha", SqlDbType.NVarChar).Value = fecha;
+            comando.Parameters.Add("@Fecha", SqlDbType.DateTime).Value = fecha;
 
             tabla = Ejecutar_Consulta(sqlQuery,comando);
             return tabla;
@@ -174,7 +174,7 @@ namespace VictusWS
         }
 
         [WebMethod]
-        public int AgregarDatosCliente(string Correo, double Peso, string Altura, string Edad,double IMC, string Agua, DateTime Fecha)
+        public int AgregarDatosCliente(string Correo, double Peso, int Altura, int Edad,double IMC, int Agua, DateTime Fecha)
         {
             StringBuilder sqlQuery = new StringBuilder();
             SqlCommand comando = new SqlCommand();
@@ -220,7 +220,7 @@ namespace VictusWS
             sqlQuery.Append("SELECT * FROM HarrisBen where Correo = @Correo and FechaHarris = @Fecha");
 
             comando.Parameters.Add("@Correo", SqlDbType.NVarChar).Value = correo;
-            comando.Parameters.Add("@Fecha", SqlDbType.NVarChar).Value = fecha;          
+            comando.Parameters.Add("@Fecha", SqlDbType.DateTime).Value = fecha;          
 
             tabla = Ejecutar_Consulta(sqlQuery,comando);
             return tabla;
@@ -285,7 +285,7 @@ namespace VictusWS
        
             sqlQuery.Append("SELECT * FROM Dieta WHERE CorreoCliente = @Correo AND FechaDieta = @Fecha");
             comando.Parameters.Add("@Correo", SqlDbType.NVarChar).Value = CorreoCliente;
-            comando.Parameters.Add("@Fecha", SqlDbType.NVarChar).Value = CorreoCliente;
+            comando.Parameters.Add("@Fecha", SqlDbType.DateTime).Value = FechaDieta;
 
             table = Ejecutar_Consulta(sqlQuery,comando);
             return table;
@@ -384,7 +384,7 @@ namespace VictusWS
 
             sqlQuery.Append("SELECT * FROM Medida WHERE CorreoCliente = @Correo AND FechaMedida = @Fecha");
             comando.Parameters.Add("@Correo", SqlDbType.NVarChar).Value = CorreoCliente ;
-            comando.Parameters.Add("@Fecha", SqlDbType.NVarChar).Value = FechaDieta;
+            comando.Parameters.Add("@Fecha", SqlDbType.DateTime).Value = FechaDieta;
 
             tabla = Ejecutar_Consulta(sqlQuery,comando);
             return tabla;

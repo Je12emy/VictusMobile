@@ -27,16 +27,19 @@ namespace Victus
             VictusWebService cliente = new VictusWebService();
             DataTable tabla = new DataTable();
 
+            string _correo = Intent.GetStringExtra("correoUsuario");
+            Toast.MakeText(this, "Correo: " + _correo, ToastLength.Long).Show();
             tabla = cliente.BuscarUltimoRegistro(Intent.GetStringExtra("correoUsuario"));
             if (!string.IsNullOrWhiteSpace(tabla.Rows[0][0].ToString()))
             {
-                DateTime fecha = Convert.ToDateTime(tabla.Rows[0][0].ToString());
-                tabla = cliente.BuscarCliente(Intent.GetStringExtra("correoUsuario"), fecha);
+                DateTime fecha = Convert.ToDateTime(tabla.Rows[0][0]);
+                string _fecha = tabla.Rows[0][0].ToString();
+                tabla = cliente.BuscarCliente(_correo, fecha.AddHours(-1));
                 if (tabla.Rows.Count > 0)
                 {
                     TextView imc = FindViewById<TextView>(Resource.Id.userIMC);
                     TextView agua = FindViewById<TextView>(Resource.Id.userAgua);
-                    imc.Text = tabla.Rows[0][5].ToString();
+                    imc.Text = Math.Round((100 * Convert.ToDouble(tabla.Rows[0][5].ToString())),2).ToString() + "%";
                     agua.Text = tabla.Rows[0][6].ToString();
                 }
             }
@@ -45,7 +48,7 @@ namespace Victus
             Button btnDatosForm = FindViewById<Button>(Resource.Id.btnModificarDatos);
             btnDatosForm.Click += delegate {
                 Intent misDatosForm = new Intent(this,typeof(MisDatosForm));
-                misDatosForm.PutExtra("correoUsuario", Intent.GetStringExtra("correoUsuaio"));
+                misDatosForm.PutExtra("correoUsuario", _correo);
                 StartActivity(misDatosForm);
             };
         }

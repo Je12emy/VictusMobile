@@ -324,7 +324,7 @@ namespace Victus.VictusWS {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/AgregarDatosCliente", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public int AgregarDatosCliente(string Correo, double Peso, string Altura, string Edad, double IMC, string Agua, System.DateTime Fecha) {
+        public int AgregarDatosCliente(string Correo, double Peso, int Altura, int Edad, double IMC, int Agua, System.DateTime Fecha) {
             object[] results = this.Invoke("AgregarDatosCliente", new object[] {
                         Correo,
                         Peso,
@@ -337,12 +337,12 @@ namespace Victus.VictusWS {
         }
         
         /// <remarks/>
-        public void AgregarDatosClienteAsync(string Correo, double Peso, string Altura, string Edad, double IMC, string Agua, System.DateTime Fecha) {
+        public void AgregarDatosClienteAsync(string Correo, double Peso, int Altura, int Edad, double IMC, int Agua, System.DateTime Fecha) {
             this.AgregarDatosClienteAsync(Correo, Peso, Altura, Edad, IMC, Agua, Fecha, null);
         }
         
         /// <remarks/>
-        public void AgregarDatosClienteAsync(string Correo, double Peso, string Altura, string Edad, double IMC, string Agua, System.DateTime Fecha, object userState) {
+        public void AgregarDatosClienteAsync(string Correo, double Peso, int Altura, int Edad, double IMC, int Agua, System.DateTime Fecha, object userState) {
             if ((this.AgregarDatosClienteOperationCompleted == null)) {
                 this.AgregarDatosClienteOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAgregarDatosClienteOperationCompleted);
             }

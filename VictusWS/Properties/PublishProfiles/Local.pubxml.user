@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\Jeremy\Desktop\VictusWS</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\Jeremy\Desktop\VictusWebService</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -76,7 +76,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/18/2015 12:19:46</publishTime>
     </File>
     <File Include="bin/VictusWS.dll">
-      <publishTime>08/11/2019 15:36:30</publishTime>
+      <publishTime>08/17/2019 02:57:17</publishTime>
     </File>
     <File Include="Global.asax">
       <publishTime>08/10/2019 21:38:02</publishTime>
