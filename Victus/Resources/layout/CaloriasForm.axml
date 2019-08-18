@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@android:color/background_light">
+    <TextView
+        android:text="Mi Nivel de Actividad"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:layout_weight="20"
+        android:id="@+id/txtNivelActividad"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="32sp" />
+    <RadioGroup
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioNivelActividad"
+        android:layout_weight="50">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Trabajo de escritorio – sin ejercicio"
+            android:id="@+id/actividadMuyBaja"
+            android:textColor="@android:color/black"
+            android:buttonTint="@color/green"
+            android:layout_marginLeft="50sp"
+            android:layout_marginBottom="8sp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Ejercicio 1-3 días por semana"
+            android:id="@+id/actividadBaja"
+            android:textColor="@android:color/black"
+            android:buttonTint="@color/green"
+            android:layout_marginLeft="50sp"
+            android:layout_marginBottom="8sp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ejercicio 3-5 días por semana"
+            android:id="@+id/actividadMedia"
+            android:textColor="@android:color/black"
+            android:buttonTint="@color/green"
+            android:layout_marginLeft="50sp"
+            android:layout_marginBottom="8sp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ejercicio 6-7 días por semana"
+            android:id="@+id/actividadAlta"
+            android:textColor="@android:color/black"
+            android:buttonTint="@color/green"
+            android:layout_marginLeft="50sp"
+            android:layout_marginBottom="8sp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ejercicio 2 veces al día"
+            android:id="@+id/actividadMuyAlta"
+            android:textColor="@android:color/black"
+            android:buttonTint="@color/green"
+            android:layout_marginLeft="50sp" />
+    </RadioGroup>
+    <Button
+        android:backgroundTint="#ffe74c3c"
+        android:text="Modificar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:id="@+id/btnModificarNivelActividadForm"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="24sp" />
+</LinearLayout>

@@ -58,10 +58,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dashboard.cs" />
+    <Compile Include="Dieta.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MisDatos.cs" />
     <Compile Include="MisDatosForm.cs" />
+    <Compile Include="NivelCalorico.cs" />
+    <Compile Include="NivelCaloricoForm.cs" />
     <Compile Include="Registro.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,6 +92,15 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\MisDatosForm.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\NivelCalorico.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\CaloriasForm.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Dieta.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <None Include="Web References\VictusWS\Reference.map">

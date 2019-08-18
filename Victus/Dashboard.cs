@@ -32,6 +32,18 @@ namespace Victus
                 misDatos.PutExtra("correoUsuario", _correo);
                 StartActivity(misDatos);
             };
+            Button btnCalorias = FindViewById<Button>(Resource.Id.btnCalorias);
+            btnCalorias.Click += delegate {
+                Intent calorias = new Intent(this, typeof(NivelCalorico));
+                calorias.PutExtra("correoUsuario", _correo);
+                StartActivity(calorias);
+            };
+            Button btnDieta = FindViewById<Button>(Resource.Id.btnDietar);
+            btnDieta.Click += delegate {
+                Intent dieta = new Intent(this, typeof(Dieta));
+                dieta.PutExtra("correoUsuario", _correo);
+                StartActivity(dieta);
+            };
         }
     }
 }

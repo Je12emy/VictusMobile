@@ -69,5 +69,8 @@ C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\android\assets\Sy
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\android\assets\System.Web.Services.pdb
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\res\layout\misdatos.xml
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\res\layout\misdatosform.xml
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\res\layout\nivelcalorico.xml
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\res\layout\caloriasform.xml
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\res\layout\dieta.xml
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\bin\Debug\Victus.dll
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\linksrc\Victus.dll.mdb
