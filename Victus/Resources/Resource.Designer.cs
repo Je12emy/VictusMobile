@@ -164,8 +164,8 @@ namespace Victus
 			// aapt resource value: 0x7f07000b
 			public const int btnMedidas = 2131165195;
 			
-			// aapt resource value: 0x7f070022
-			public const int btnModificarDatos = 2131165218;
+			// aapt resource value: 0x7f070025
+			public const int btnModificarDatos = 2131165221;
 			
 			// aapt resource value: 0x7f07000e
 			public const int btnModificarDieta = 2131165198;
@@ -173,44 +173,50 @@ namespace Victus
 			// aapt resource value: 0x7f070013
 			public const int btnModificarDietaForm = 2131165203;
 			
+			// aapt resource value: 0x7f07001f
+			public const int btnModificarMedidas = 2131165215;
+			
 			// aapt resource value: 0x7f070007
 			public const int btnModificarNivelActividadForm = 2131165191;
 			
-			// aapt resource value: 0x7f07002d
-			public const int btnModificarNivelCalorico = 2131165229;
+			// aapt resource value: 0x7f070030
+			public const int btnModificarNivelCalorico = 2131165232;
 			
 			// aapt resource value: 0x7f07001c
 			public const int btnRegistrarme = 2131165212;
 			
-			// aapt resource value: 0x7f070027
-			public const int inputAltura = 2131165223;
+			// aapt resource value: 0x7f07002a
+			public const int inputAltura = 2131165226;
 			
-			// aapt resource value: 0x7f070030
-			public const int inputCedula = 2131165232;
+			// aapt resource value: 0x7f070033
+			public const int inputCedula = 2131165235;
 			
-			// aapt resource value: 0x7f070036
-			public const int inputClave = 2131165238;
+			// aapt resource value: 0x7f070039
+			public const int inputClave = 2131165241;
 			
 			// aapt resource value: 0x7f070018
 			public const int inputClaveLogin = 2131165208;
 			
-			// aapt resource value: 0x7f070033
-			public const int inputCorreo = 2131165235;
+			// aapt resource value: 0x7f070036
+			public const int inputCorreo = 2131165238;
 			
 			// aapt resource value: 0x7f070016
 			public const int inputCorreoLogin = 2131165206;
 			
-			// aapt resource value: 0x7f070029
-			public const int inputEdad = 2131165225;
+			// aapt resource value: 0x7f07002c
+			public const int inputEdad = 2131165228;
 			
-			// aapt resource value: 0x7f070032
-			public const int inputNombre = 2131165234;
+			// aapt resource value: 0x7f070035
+			public const int inputNombre = 2131165237;
 			
-			// aapt resource value: 0x7f070025
-			public const int inputPeso = 2131165221;
+			// aapt resource value: 0x7f070028
+			public const int inputPeso = 2131165224;
 			
 			// aapt resource value: 0x7f07000d
 			public const int listDieta = 2131165197;
+			
+			// aapt resource value: 0x7f07001e
+			public const int listMedida = 2131165214;
 			
 			// aapt resource value: 0x7f070010
 			public const int radioBajarPeso = 2131165200;
@@ -224,20 +230,20 @@ namespace Victus
 			// aapt resource value: 0x7f070012
 			public const int radioSubirPeso = 2131165202;
 			
-			// aapt resource value: 0x7f070035
-			public const int spinner = 2131165237;
+			// aapt resource value: 0x7f070038
+			public const int spinner = 2131165240;
 			
-			// aapt resource value: 0x7f070020
-			public const int txtAgua = 2131165216;
+			// aapt resource value: 0x7f070023
+			public const int txtAgua = 2131165219;
 			
-			// aapt resource value: 0x7f070026
-			public const int txtAltura = 2131165222;
+			// aapt resource value: 0x7f070029
+			public const int txtAltura = 2131165225;
 			
-			// aapt resource value: 0x7f07002b
-			public const int txtCalorias = 2131165227;
+			// aapt resource value: 0x7f07002e
+			public const int txtCalorias = 2131165230;
 			
-			// aapt resource value: 0x7f07002f
-			public const int txtCedula = 2131165231;
+			// aapt resource value: 0x7f070032
+			public const int txtCedula = 2131165234;
 			
 			// aapt resource value: 0x7f070017
 			public const int txtClave = 2131165207;
@@ -245,8 +251,8 @@ namespace Victus
 			// aapt resource value: 0x7f070015
 			public const int txtCorreo = 2131165205;
 			
-			// aapt resource value: 0x7f070023
-			public const int txtDatosForm = 2131165219;
+			// aapt resource value: 0x7f070026
+			public const int txtDatosForm = 2131165222;
 			
 			// aapt resource value: 0x7f07000c
 			public const int txtDieta = 2131165196;
@@ -254,44 +260,47 @@ namespace Victus
 			// aapt resource value: 0x7f07000f
 			public const int txtDietaForm = 2131165199;
 			
-			// aapt resource value: 0x7f070028
-			public const int txtEdad = 2131165224;
+			// aapt resource value: 0x7f07002b
+			public const int txtEdad = 2131165227;
 			
-			// aapt resource value: 0x7f070034
-			public const int txtGenero = 2131165236;
+			// aapt resource value: 0x7f070037
+			public const int txtGenero = 2131165239;
 			
-			// aapt resource value: 0x7f07001e
-			public const int txtIMC = 2131165214;
+			// aapt resource value: 0x7f070021
+			public const int txtIMC = 2131165217;
 			
 			// aapt resource value: 0x7f070014
 			public const int txtLogin = 2131165204;
 			
 			// aapt resource value: 0x7f07001d
-			public const int txtMisDatos = 2131165213;
+			public const int txtMedida = 2131165213;
+			
+			// aapt resource value: 0x7f070020
+			public const int txtMisDatos = 2131165216;
 			
 			// aapt resource value: 0x7f070000
 			public const int txtNivelActividad = 2131165184;
 			
-			// aapt resource value: 0x7f07002a
-			public const int txtNivelCalorico = 2131165226;
+			// aapt resource value: 0x7f07002d
+			public const int txtNivelCalorico = 2131165229;
+			
+			// aapt resource value: 0x7f070034
+			public const int txtNombre = 2131165236;
+			
+			// aapt resource value: 0x7f070027
+			public const int txtPeso = 2131165223;
 			
 			// aapt resource value: 0x7f070031
-			public const int txtNombre = 2131165233;
+			public const int txtRegistro = 2131165233;
 			
 			// aapt resource value: 0x7f070024
-			public const int txtPeso = 2131165220;
+			public const int userAgua = 2131165220;
 			
-			// aapt resource value: 0x7f07002e
-			public const int txtRegistro = 2131165230;
+			// aapt resource value: 0x7f07002f
+			public const int userCalorias = 2131165231;
 			
-			// aapt resource value: 0x7f070021
-			public const int userAgua = 2131165217;
-			
-			// aapt resource value: 0x7f07002c
-			public const int userCalorias = 2131165228;
-			
-			// aapt resource value: 0x7f07001f
-			public const int userIMC = 2131165215;
+			// aapt resource value: 0x7f070022
+			public const int userIMC = 2131165218;
 			
 			static Id()
 			{
@@ -325,16 +334,19 @@ namespace Victus
 			public const int Main = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int MisDatos = 2130903046;
+			public const int Medidas = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int MisDatosForm = 2130903047;
+			public const int MisDatos = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int NivelCalorico = 2130903048;
+			public const int MisDatosForm = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int Registro = 2130903049;
+			public const int NivelCalorico = 2130903049;
+			
+			// aapt resource value: 0x7f03000a
+			public const int Registro = 2130903050;
 			
 			static Layout()
 			{

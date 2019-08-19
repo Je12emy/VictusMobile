@@ -73,5 +73,6 @@ C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\res\layout\nivelc
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\res\layout\caloriasform.xml
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\res\layout\dieta.xml
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\res\layout\dietaform.xml
+C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\res\layout\medidas.xml
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\bin\Debug\Victus.dll
 C:\Users\Jeremy\Documents\GitHub\VictusMobile\Victus\obj\Debug\linksrc\Victus.dll.mdb

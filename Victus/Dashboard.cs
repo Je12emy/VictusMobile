@@ -44,6 +44,12 @@ namespace Victus
                 dieta.PutExtra("correoUsuario", _correo);
                 StartActivity(dieta);
             };
+            Button btnMedida = FindViewById<Button>(Resource.Id.btnMedidas);
+            btnMedida.Click += delegate {
+                Intent medida = new Intent(this, typeof(Medidas));
+                medida.PutExtra("correoUsuario", _correo);
+                StartActivity(medida);
+            };
         }
     }
 }
