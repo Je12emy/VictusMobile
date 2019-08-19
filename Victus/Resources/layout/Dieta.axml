@@ -10,7 +10,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:height="0dp"
+        android:height="10dp"
         android:layout_weight="20"
         android:id="@+id/txtDieta"
         android:textColor="@android:color/black"
@@ -21,8 +21,9 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/listDieta" />
+        android:id="@+id/listDieta"
+        android:layout_height="15sp"
+        android:layout_weight="20" />
     <Button
         android:backgroundTint="#ffe74c3c"
         android:text="Modificar Dieta"

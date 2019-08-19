@@ -6,6 +6,10 @@ Victus.Dieta, Victus;md51f177e058595248899511fce92992672.Dieta
 Victus.Dieta, Victus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md51f177e058595248899511fce92992672.Dieta
 Victus.Dieta;md51f177e058595248899511fce92992672.Dieta
 victus.Dieta;md51f177e058595248899511fce92992672.Dieta
+Victus.DietaForm, Victus;md51f177e058595248899511fce92992672.DietaForm
+Victus.DietaForm, Victus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md51f177e058595248899511fce92992672.DietaForm
+Victus.DietaForm;md51f177e058595248899511fce92992672.DietaForm
+victus.DietaForm;md51f177e058595248899511fce92992672.DietaForm
 Victus.Login, Victus;md51f177e058595248899511fce92992672.Login
 Victus.Login, Victus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md51f177e058595248899511fce92992672.Login
 Victus.Login;md51f177e058595248899511fce92992672.Login

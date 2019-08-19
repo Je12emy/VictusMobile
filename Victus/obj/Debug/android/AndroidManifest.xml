@@ -9,6 +9,7 @@
   <application android:allowBackup="true" android:label="@string/app_name" android:name="android.app.Application" android:debuggable="true">
     <activity android:label="Dashboard" android:name="md51f177e058595248899511fce92992672.Dashboard" />
     <activity android:label="Dieta" android:name="md51f177e058595248899511fce92992672.Dieta" />
+    <activity android:label="DietaForm" android:name="md51f177e058595248899511fce92992672.DietaForm" />
     <activity android:label="Login" android:name="md51f177e058595248899511fce92992672.Login" />
     <activity android:label="Victus" android:name="md51f177e058595248899511fce92992672.MainActivity">
       <intent-filter>

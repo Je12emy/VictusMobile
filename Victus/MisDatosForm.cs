@@ -36,6 +36,7 @@ namespace Victus
                     VictusWebService cliente = new VictusWebService();
 
                     DateTime fecha = DateTime.Now;
+            
                     // Calculos
                     // IMC = Peso / Altura^2
                     double imc =  Convert.ToDouble(inputPeso.Text) / Math.Pow(Convert.ToDouble(inputAltura.Text),2) * 100;

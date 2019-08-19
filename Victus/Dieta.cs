@@ -62,6 +62,13 @@ namespace Victus
                 Toast.MakeText(this, "Parece que no tienes datos registrados", ToastLength.Long).Show();
 
 
+            Button btnModificarDieta = FindViewById<Button>(Resource.Id.btnModificarDieta);
+            btnModificarDieta.Click += delegate {
+                Intent ModificarDieta = new Intent(this,typeof(DietaForm));
+                ModificarDieta.PutExtra("correoUsuario", _correo);
+                StartActivity(ModificarDieta);
+            };
+
         }
     }
 }
