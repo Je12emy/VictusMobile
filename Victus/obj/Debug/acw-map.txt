@@ -22,6 +22,10 @@ Victus.Medidas, Victus;md51f177e058595248899511fce92992672.Medidas
 Victus.Medidas, Victus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md51f177e058595248899511fce92992672.Medidas
 Victus.Medidas;md51f177e058595248899511fce92992672.Medidas
 victus.Medidas;md51f177e058595248899511fce92992672.Medidas
+Victus.MedidasForm, Victus;md51f177e058595248899511fce92992672.MedidasForm
+Victus.MedidasForm, Victus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md51f177e058595248899511fce92992672.MedidasForm
+Victus.MedidasForm;md51f177e058595248899511fce92992672.MedidasForm
+victus.MedidasForm;md51f177e058595248899511fce92992672.MedidasForm
 Victus.MisDatos, Victus;md51f177e058595248899511fce92992672.MisDatos
 Victus.MisDatos, Victus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md51f177e058595248899511fce92992672.MisDatos
 Victus.MisDatos;md51f177e058595248899511fce92992672.MisDatos

@@ -63,6 +63,7 @@
     <Compile Include="Login.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Medidas.cs" />
+    <Compile Include="MedidasForm.cs" />
     <Compile Include="MisDatos.cs" />
     <Compile Include="MisDatosForm.cs" />
     <Compile Include="NivelCalorico.cs" />
@@ -109,6 +110,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Medidas.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MedidasForm.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <None Include="Web References\VictusWS\Reference.map">

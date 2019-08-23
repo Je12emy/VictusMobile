@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>8/19/2019 4:30:58 PM</xs:documentation>
+    <xs:documentation>8/23/2019 2:18:40 AM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -19,6 +19,7 @@
             <xs:enumeration value="@layout/login" />
             <xs:enumeration value="@layout/main" />
             <xs:enumeration value="@layout/medidas" />
+            <xs:enumeration value="@layout/medidasform" />
             <xs:enumeration value="@layout/misdatos" />
             <xs:enumeration value="@layout/misdatosform" />
             <xs:enumeration value="@layout/nivelcalorico" />
@@ -67,6 +68,7 @@
             <xs:enumeration value="@layout/login" />
             <xs:enumeration value="@layout/main" />
             <xs:enumeration value="@layout/medidas" />
+            <xs:enumeration value="@layout/medidasform" />
             <xs:enumeration value="@layout/misdatos" />
             <xs:enumeration value="@layout/misdatosform" />
             <xs:enumeration value="@layout/nivelcalorico" />
@@ -115,6 +117,7 @@
             <xs:enumeration value="@layout/login" />
             <xs:enumeration value="@layout/main" />
             <xs:enumeration value="@layout/medidas" />
+            <xs:enumeration value="@layout/medidasform" />
             <xs:enumeration value="@layout/misdatos" />
             <xs:enumeration value="@layout/misdatosform" />
             <xs:enumeration value="@layout/nivelcalorico" />
@@ -163,6 +166,7 @@
             <xs:enumeration value="@layout/login" />
             <xs:enumeration value="@layout/main" />
             <xs:enumeration value="@layout/medidas" />
+            <xs:enumeration value="@layout/medidasform" />
             <xs:enumeration value="@layout/misdatos" />
             <xs:enumeration value="@layout/misdatosform" />
             <xs:enumeration value="@layout/nivelcalorico" />

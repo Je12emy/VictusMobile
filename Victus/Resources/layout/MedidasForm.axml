@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@android:color/background_light">
+    <TextView
+        android:text="Mis Medidas"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="15dp"
+        android:layout_weight="20"
+        android:id="@+id/txtBicepIzquierdo"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="32sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:id="@+id/scrollViewForm"
+        android:layout_weight="55">
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/linearlayoutForm"
+            android:orientation="vertical"
+            android:layout_gravity="top|center">
+            <TextView
+                android:text="Bicep Izquierdo"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="25dp"
+                android:id="@+id/txtBicepIzquierdo"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textSize="16sp" />
+            <EditText
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputBicepIzquierdo"
+                android:backgroundTint="#ff2c3e50"
+                android:hint="Ingrese su Medida"
+                android:textColorHint="#34495e"
+                android:gravity="center"
+                android:textColor="#34495e" />
+            <TextView
+                android:text="Bicep Derecho"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="25dp"
+                android:id="@+id/txtBicepDerecho"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textSize="16sp" />
+            <EditText
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputBicepDerecho"
+                android:backgroundTint="#ff2c3e50"
+                android:hint="Ingrese su Medida"
+                android:textColorHint="#34495e"
+                android:gravity="center"
+                android:textColor="#34495e" />
+            <TextView
+                android:text="Abdomen"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="25dp"
+                android:id="@+id/txtAbdomen"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textSize="16sp" />
+            <EditText
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputBicepIzquierdo"
+                android:backgroundTint="#ff2c3e50"
+                android:hint="Ingrese su Medida"
+                android:textColorHint="#34495e"
+                android:gravity="center"
+                android:textColor="#34495e" />
+            <TextView
+                android:text="Cuadricep Izquierdo"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="25dp"
+                android:id="@+id/txtCuadricepDerecho"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textSize="16sp" />
+            <EditText
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputCuadricepIzquierdo"
+                android:backgroundTint="#ff2c3e50"
+                android:hint="Ingrese su Medida"
+                android:textColorHint="#34495e"
+                android:gravity="center"
+                android:textColor="#34495e" />
+            <TextView
+                android:text="Cuadricep Derecho"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="25dp"
+                android:id="@+id/txtCuadricepDerecho"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textSize="16sp" />
+            <EditText
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputCuadricepDerecho"
+                android:backgroundTint="#ff2c3e50"
+                android:hint="Ingrese su Medida"
+                android:textColorHint="#34495e"
+                android:gravity="center"
+                android:textColor="#34495e" />
+            <TextView
+                android:text="Pantorrilla Izquierda"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="25dp"
+                android:id="@+id/txtPantorrillaIzquierda"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textSize="16sp" />
+            <EditText
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputPantorrillaIzquierda"
+                android:backgroundTint="#ff2c3e50"
+                android:hint="Ingrese su Medida"
+                android:textColorHint="#34495e"
+                android:gravity="center"
+                android:textColor="#34495e" />
+            <TextView
+                android:text="Pantorrilla Derecha"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="25dp"
+                android:id="@+id/txtPantorrillaDerecha"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textSize="16sp" />
+            <EditText
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputPantorrillaDerecha"
+                android:backgroundTint="#ff2c3e50"
+                android:hint="Ingrese su Medida"
+                android:textColorHint="#34495e"
+                android:gravity="center"
+                android:textColor="#34495e" />
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:backgroundTint="#ffe74c3c"
+        android:text="Mis Datos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:id="@+id/btnDatos"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="24sp"
+        android:layout_gravity="bottom" />
+</LinearLayout>

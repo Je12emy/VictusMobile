@@ -59,6 +59,13 @@ namespace Victus
             else
                 Toast.MakeText(this, "Parece que no tienes datos registrados", ToastLength.Long).Show();
 
+            Button btnMedidasForm = FindViewById<Button>(Resource.Id.btnModificarMedidas);
+            btnMedidasForm.Click += delegate {
+                Intent medidas = new Intent(this,typeof(MedidasForm));
+                medidas.PutExtra("correoUsuario", _correo);
+                StartActivity(medidas);
+            };
+
         }
     }
 }

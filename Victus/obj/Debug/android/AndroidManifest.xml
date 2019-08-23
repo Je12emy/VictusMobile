@@ -18,6 +18,7 @@
       </intent-filter>
     </activity>
     <activity android:label="Medidas" android:name="md51f177e058595248899511fce92992672.Medidas" />
+    <activity android:label="MedidasForm" android:name="md51f177e058595248899511fce92992672.MedidasForm" />
     <activity android:label="MisDatos" android:name="md51f177e058595248899511fce92992672.MisDatos" />
     <activity android:label="MisDatosForm" android:name="md51f177e058595248899511fce92992672.MisDatosForm" />
     <activity android:label="NivelCalorico" android:name="md51f177e058595248899511fce92992672.NivelCalorico" />
