@@ -44,9 +44,10 @@ namespace Victus
                     if (i>0)
                     {
                         Toast.MakeText(this, "Se han agregado tus Datos!", ToastLength.Long).Show();
-                        Intent medidas = new Intent(this, typeof(Dashboard));
-                        medidas.PutExtra("correoUsuario", _correo);
-                        StartActivity(medidas);
+
+                        Intent dashboard = new Intent(this, typeof(Dashboard));
+                        dashboard.PutExtra("correoUsuario", _correo);
+                        StartActivity(dashboard);
                     }else
                         Toast.MakeText(this, "Se produjo en erro al agregar tus Datos!", ToastLength.Long).Show();
                 }

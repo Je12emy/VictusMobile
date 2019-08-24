@@ -31,7 +31,7 @@ namespace Victus
 
             btnIngresar.Click += delegate{
                 // Mensaje de feedback para el usuario
-                Toast.MakeText(this, "Verificando", ToastLength.Long).Show();
+                //Toast.MakeText(this, "Verificando", ToastLength.Long).Show();
                 if (!string.IsNullOrEmpty(correo.Text) && !string.IsNullOrEmpty(clave.Text))
                 {
                     // Declarar variables
@@ -48,7 +48,7 @@ namespace Victus
                         if (clave.Text == tabla.Rows[0][1].ToString())
                         {
                             // Se avisa que se esta en proceso de iniciar sesion
-                            Toast.MakeText(this, "Iniciando Sesion!", ToastLength.Long).Show();
+                            //Toast.MakeText(this, "Iniciando Sesion!", ToastLength.Long).Show();
 
                             dashboard = new Intent(this, typeof(Dashboard));                         
                             // Insertar un string para pasarlo atravez del modelo.

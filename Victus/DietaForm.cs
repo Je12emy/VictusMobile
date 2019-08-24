@@ -96,8 +96,11 @@ namespace Victus
 
                                         cliente.AgregarRelacion(codigoDieta, codigoAlimento);
                                     }
-
-                                }else
+                                    Intent dashboard = new Intent(this, typeof(Dashboard));
+                                    dashboard.PutExtra("correoUsuario", Intent.GetStringExtra("correoUsuario").ToString());
+                                    StartActivity(dashboard);
+                                }
+                                else
                                     Toast.MakeText(this, "Se produjo un error al procesar tu dieta", ToastLength.Long).Show();
                                 System.Diagnostics.Debug.WriteLine(tabla.Rows[0][0].ToString());
 

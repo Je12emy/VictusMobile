@@ -51,7 +51,7 @@ namespace Victus
                 DataTable tabla = new DataTable();
 
                 string _correo = Intent.GetStringExtra("correoUsuario");
-                Toast.MakeText(this, "Correo: " + _correo, ToastLength.Long).Show();
+                //Toast.MakeText(this, "Correo: " + _correo, ToastLength.Long).Show();
                 tabla = cliente.BuscarUltimoRegistro(Intent.GetStringExtra("correoUsuario"));
                 if (!string.IsNullOrWhiteSpace(tabla.Rows[0][0].ToString()))
                 {
@@ -114,9 +114,10 @@ namespace Victus
                             if (i > 0)
                             {
                                 Toast.MakeText(this, "Se han registrado tus datos", ToastLength.Long).Show();
-                                Intent NivelCalorico = new Intent(this, typeof(NivelCalorico));
-                                NivelCalorico.PutExtra("correoUsuario", _correo);
-                                StartActivity(NivelCalorico);
+
+                                Intent dashboard = new Intent(this, typeof(Dashboard));
+                                dashboard.PutExtra("correoUsuario", Intent.GetStringExtra("correoUsuario").ToString());
+                                StartActivity(dashboard);
                             }
                             else
                                 Toast.MakeText(this, "Se produjo un error la registrar tus datos", ToastLength.Long).Show();

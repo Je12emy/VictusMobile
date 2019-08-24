@@ -28,7 +28,7 @@ namespace Victus
             DataTable tabla = new DataTable();
 
             string _correo = Intent.GetStringExtra("correoUsuario");
-            Toast.MakeText(this, "Correo: " + _correo, ToastLength.Long).Show();
+            //Toast.MakeText(this, "Correo: " + _correo, ToastLength.Long).Show();
             tabla = cliente.BuscarUltimoRegistro(Intent.GetStringExtra("correoUsuario"));
             if (!string.IsNullOrWhiteSpace(tabla.Rows[0][0].ToString()))
             {
@@ -39,12 +39,18 @@ namespace Victus
                 {
                     TextView imc = FindViewById<TextView>(Resource.Id.userIMC);
                     TextView agua = FindViewById<TextView>(Resource.Id.userAgua);
-                    imc.Text = Math.Round((100 * Convert.ToDouble(tabla.Rows[0][5].ToString())),2).ToString() + "%";
+                    imc.Text = Math.Round((100 * Convert.ToDouble(tabla.Rows[0][5].ToString())), 2).ToString() + "%";
                     agua.Text = tabla.Rows[0][6].ToString();
                 }
             }
             else
+            {
                 Toast.MakeText(this, "Parece que no tienes datos registrados", ToastLength.Long).Show();
+
+                Intent misDatosForm = new Intent(this, typeof(MisDatosForm));
+                misDatosForm.PutExtra("correoUsuario", _correo);
+                StartActivity(misDatosForm);
+            }
             Button btnDatosForm = FindViewById<Button>(Resource.Id.btnModificarDatos);
             btnDatosForm.Click += delegate {
                 Intent misDatosForm = new Intent(this,typeof(MisDatosForm));

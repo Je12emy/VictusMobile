@@ -29,7 +29,7 @@ namespace Victus
                 EditText inputPeso = FindViewById<EditText>(Resource.Id.inputPeso);
                 EditText inputAltura = FindViewById<EditText>(Resource.Id.inputAltura);
                 EditText inputEdad = FindViewById<EditText>(Resource.Id.inputEdad);
-                Toast.MakeText(this, "Correo: " + Intent.GetStringExtra("correoUsuario"), ToastLength.Long).Show();
+                //Toast.MakeText(this, "Correo: " + Intent.GetStringExtra("correoUsuario"), ToastLength.Long).Show();
                 if (!string.IsNullOrEmpty(inputPeso.Text) && !string.IsNullOrEmpty(inputAltura.Text) && !string.IsNullOrEmpty(inputEdad.Text))
                 {
                     
@@ -48,9 +48,10 @@ namespace Victus
                     {
                         {
                             Toast.MakeText(this, "Se han agregado tus Datos!", ToastLength.Long).Show();
-                            Intent misDatos = new Intent(this, typeof(MisDatos));
-                            misDatos.PutExtra("correoUsuario", Intent.GetStringExtra("correoUsuario"));
-                            StartActivity(misDatos);
+
+                            Intent dashboard = new Intent(this, typeof(Dashboard));
+                            dashboard.PutExtra("correoUsuario", Intent.GetStringExtra("correoUsuario").ToString());
+                            StartActivity(dashboard);
                         }
                     }
                     else

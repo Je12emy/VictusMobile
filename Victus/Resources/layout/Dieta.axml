@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:id="@+id/listDieta"
         android:layout_height="15sp"
-        android:layout_weight="20" />
+        android:layout_weight="50" />
     <Button
         android:backgroundTint="#ffe74c3c"
         android:text="Modificar Dieta"

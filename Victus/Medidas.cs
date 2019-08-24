@@ -28,7 +28,7 @@ namespace Victus
 
             // Obtener la dieta mas reciente
             string _correo = Intent.GetStringExtra("correoUsuario");
-            Toast.MakeText(this, "Correo: " + _correo, ToastLength.Long).Show();
+            //Toast.MakeText(this, "Correo: " + _correo, ToastLength.Long).Show();
             tabla = cliente.ObtenerUltimaMedida(_correo);
             if (!string.IsNullOrWhiteSpace(tabla.Rows[0][0].ToString()))
             {

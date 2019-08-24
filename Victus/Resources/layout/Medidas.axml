@@ -17,13 +17,13 @@
         android:gravity="center"
         android:textSize="32sp" />
     <ListView
+        android:layout_weight="50"
         android:backgroundTint="@android:color/black"
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:id="@+id/listMedida"
-        android:layout_height="15sp"
-        android:layout_weight="20" />
+        android:layout_height="15sp" />
     <Button
         android:backgroundTint="#ffe74c3c"
         android:text="Modificar Medidas"

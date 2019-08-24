@@ -24,7 +24,7 @@ namespace Victus
             // Create your application here
 
             string _correo = Intent.GetStringExtra("correoUsuario");
-            Toast.MakeText(this, "Correo: " + _correo, ToastLength.Long).Show();
+            //Toast.MakeText(this, "Correo: " + _correo, ToastLength.Long).Show();
             SetContentView(Resource.Layout.Dashboard);
             Button btnDatos = FindViewById<Button>(Resource.Id.btnDatos);
             btnDatos.Click += delegate {
@@ -49,6 +49,11 @@ namespace Victus
                 Intent medida = new Intent(this, typeof(Medidas));
                 medida.PutExtra("correoUsuario", _correo);
                 StartActivity(medida);
+            };
+            Button btnSalir = FindViewById<Button>(Resource.Id.btnSalir);
+            btnSalir.Click += delegate {
+                Intent salir = new Intent(this, typeof(MainActivity));
+                StartActivity(salir);
             };
         }
     }
