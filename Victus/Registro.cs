@@ -42,7 +42,7 @@ namespace Victus
             btnRegistrarme.Click += delegate
             {
                 
-                Toast.MakeText(this, "Registrando", ToastLength.Long).Show();
+                //Toast.MakeText(this, "Registrando", ToastLength.Long).Show();
                 EditText correo = FindViewById<EditText>(Resource.Id.inputCorreo);
                 EditText cedula = FindViewById<EditText>(Resource.Id.inputCedula);
                 EditText clave = FindViewById<EditText>(Resource.Id.inputClave);

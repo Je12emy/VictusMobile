@@ -42,7 +42,7 @@ namespace Victus
                     ListView listMedida = FindViewById<ListView>(Resource.Id.listMedida);
                     List<string> itemsNew = new List<string>();
                     //List<string> itemsParte = new List<string>();
-                    string[] partes = { "","","","Bicep Izquierdo","Bicep Derecho","Abdomen", "Cuadricep Izquierdo", "Cuadricep Derecho", "Pantorrilla Izquierda", "Pantorrila Derecha"};
+                    string[] partes = { "", "", "", "Bicep Izquierdo", "Bicep Derecho", "Abdomen", "Cuadricep Izquierdo", "Cuadricep Derecho", "Pantorrilla Izquierda", "Pantorrila Derecha" };
                     // Llenar la lista
                     for (int i = 3; i < tabla.Columns.Count; i++)
                     {
@@ -57,7 +57,12 @@ namespace Victus
                 }
             }
             else
-                Toast.MakeText(this, "Parece que no tienes datos registrados", ToastLength.Long).Show();
+            { 
+            Toast.MakeText(this, "Parece que no tienes datos registrados", ToastLength.Long).Show();
+                Intent medidas = new Intent(this, typeof(MedidasForm));
+                medidas.PutExtra("correoUsuario", _correo);
+                StartActivity(medidas);
+            }
 
             Button btnMedidasForm = FindViewById<Button>(Resource.Id.btnModificarMedidas);
             btnMedidasForm.Click += delegate {
